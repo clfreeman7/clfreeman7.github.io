@@ -22,7 +22,7 @@ repository               : "clfreeman7/clfreeman7.github.io"
 #               Additional customization can be done by editing /_includes/author-profile.html
 author:
   # Biographic information
-  avatar           : "profile.png"
+  avatar           : "CF_profile.PNG"
   name             : "Caitlin Freeman, PhD"
   pronouns         : # example: "she/her"  
   bio              : "Robotics Researcher and Mechanical Engineer"
