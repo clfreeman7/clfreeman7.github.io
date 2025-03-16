@@ -23,13 +23,13 @@ repository               : "clfreeman7/clfreeman7.github.io"
 author:
   # Biographic information
   avatar           : "profile.png"
-  name             : "Your Sidebar Name"
+  name             : "Caitlin Freeman, PhD"
   pronouns         : # example: "she/her"  
-  bio              : "Short biography for the left-hand sidebar"
-  location         : "Earth"
-  employer         : "Red Brick University"
+  bio              : "Robotics Researcher and Mechanical Engineer"
+  location         : "Memphis, TN"
+  employer         : "Visiting Scholar at the University of Alabama"
   uri              : # URL
-  email            : "none@example.org" 
+  email            : "caitlinfreeman7@gmail.com" 
 
   # Academic websites
   arxiv            : # URL - Update with the correct link to your profile
