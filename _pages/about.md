@@ -15,7 +15,7 @@ Hi, I'm Caitlin! I'm a roboticst currently working as a Visiting Scholar at the 
 </p>
 
 -->
-{% include_relative files/plotly_example.html %}
+{% include_relative plotly_example.html %}
 
 My Research
 ======

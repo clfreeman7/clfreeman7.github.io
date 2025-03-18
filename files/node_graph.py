@@ -9,4 +9,4 @@ fig = px.scatter(
     )
 fig.show()
 
-fig.write_html('plotly_example.html', full_html=False, include_plotlyjs='cdn')
+fig.write_html('_pages/plotly_example.html', full_html=False, include_plotlyjs='cdn')
