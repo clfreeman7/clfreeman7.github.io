@@ -7,7 +7,8 @@ redirect_from:
   - /about.html
 ---
 
-Hi, I'm Caitlin! I'm a roboticst currently working as a Visiting Scholar at the University of Alabama. My work is focused on the design, fabrication, and control of modular reconfigurable soft robots. 
+Hi, I'm Caitlin! I'm a roboticst currently working as a Visiting Scholar at the [University of Alabama](https://sites.ua.edu/arl/). My work is focused on the design, fabrication, and control of modular reconfigurable soft robots. 
+![Robot translation gif](/images/robot_translation.gif)
 
 My Research
 ======
