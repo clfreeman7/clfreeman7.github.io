@@ -1,17 +1,20 @@
 # Graph visualization to show experience and education that inform my research.
 import plotly.graph_objects as go
-import plotly.express as px
 import networkx as nx
 
 # Create the graph. 
 G = nx.Graph()
 
 # Define groups of nodes and their labels.
-phd_courses = ['Mechanical Vibrations', 'Advanced Linear Control', 'Engineering Optimization',
-               'Linear Algebra', 'Machine Learning', 'Intro to Mechatronics', 
-               'Digital Signal Processing', 'Intro to Robotics', 'Linear Optimization Theory',
-               'MechE Analysis', 'Adv Robot Kinematics and Dynamics', 'Optimal Control and Estimation', 
-               'Partial Differential Equations', 'Biomechanics of Human Movement']
+phd_courses = ['Mechanical Vibrations', 'Advanced Linear Control', 
+               'Engineering Optimization', 'Linear Algebra',
+               'Machine Learning', 'Intro to Mechatronics',
+               'Digital Signal Processing', 'Intro to Robotics', 
+               'Linear Optimization Theory', 'MechE Analysis', 
+               'Adv Robot Kinematics and Dynamics', 
+               'Optimal Control and Estimation', 
+               'Partial Differential Equations', 
+               'Biomechanics of Human Movement']
 
 committee_fields = ['Dr. Sameer Mulani<br>Optimization<br>Aerospace (UA)', 
                     'Dr. Vishesh Vikas<br>Soft Robotics<br>MechE (UA)',
@@ -20,30 +23,38 @@ committee_fields = ['Dr. Sameer Mulani<br>Optimization<br>Aerospace (UA)',
                     'Dr. W. Steve Shepard Jr.<br>Vibrations/Acoustics<br>Mech E (UA)', 
                     'Dr. Barry Trimmer<br>Biology/Neuroscience<br>Tufts University']
 
-research_fields = ['Design Optimization', 'Modular Reconfigurable Robots', 'Reinforcement Learning',
-                    'Mobile Soft Robots', 'Computer Vision', 'Visual Tracking', 'Bio-inspired Robots',
-                   'Optimal Control', 'Probability and Statistics', 'Path Planning',
-                   'Closed-Loop Control', 'Design of Experiments', 'Hypothesis Testing', 
-                   'Neural Control', 'Locomotion Simulation and Analysis', 'Inertial Sensors', 
-                   'Topology', 'Lie Algebra', 'Kinematics and Dynamics', 'Data Visualization', 
-                   'Reproducibility', 'Bioacoustics', 'Biological Tissue Phantoms']
+research_fields = ['Design Optimization', 'Modular Reconfigurable Robots', 
+                   'Reinforcement Learning', 'Mobile Soft Robots',
+                   'Computer Vision', 'Visual Tracking', 'Bio-inspired Robots',
+                   'Optimal Control', 'Probability and Statistics', 
+                   'Path Planning', 'Closed-Loop Control', 
+                   'Design of Experiments', 'Hypothesis Testing', 
+                   'Neural Control', 'Locomotion Simulation and Analysis',
+                   'Inertial Sensors', 'Geometry and Topology', 'Lie Algebra',
+                   'Kinematics and Dynamics', 'Data Visualization', 
+                   'Reproducibility', 'Bioacoustics', 
+                   'Biological Tissue Phantoms']
 
-related_fields = ['Surgical Robots', 'Agricultural Robots', 'Search and Rescue Robots', 
-                  'Central Pattern Generators', 'Materials Engineering', 'Biomechanical Modeling',
+related_fields = ['Surgical Robots', 'Agricultural Robots',
+                  'Search and Rescue Robots', 'Central Pattern Generators',
+                  'Materials Engineering', 'Biomechanical Modeling',
                   'Human Gait Analysis', 'Neuroscience', 'Computational Biology']
 
 category_bubbles = [phd_courses, committee_fields, research_fields, related_fields]
-category_names = ['PhD<br>Courses', 'Dissertation<br>Committee', 'Dissertation<br>Research', 'Related<br>Research']
-node_sizes = []
-node_labels = []
-hover_labels = []
-node_colors = []
+category_names = ['PhD<br>Courses', 'Dissertation<br>Committee',
+                  'Dissertation<br>Research', 'Related<br>Research']
+
 # Create central node.
 center_node = 'My<br>Research'
 G.add_node(center_node)
 
-node_labels.append(center_node)
+# Initialize plot info.
+node_sizes = []     
+node_labels = []
+hover_labels = []
+node_colors = []
 node_sizes.append(60)
+node_labels.append(center_node)
 hover_labels.append(None)
 node_colors.append(0)
 
@@ -60,11 +71,13 @@ for i, bubble in enumerate(category_bubbles):
         node_labels.append(None)
         hover_labels.append(component)
         node_colors.append(i+1)
-# (Optional) Create dictionary for node sizes to pass to nx.forceatlas2_layout.      
+
+# (Optional) Create dict for node sizes to pass to nx.forceatlas2_layout.      
 node_size_dict = {k:v for v,k in zip(G.nodes,node_sizes)}
 
 # Use force algorithm to determine positions of nodes in graph.
-pos = nx.forceatlas2_layout(G, seed=1, scaling_ratio=2, strong_gravity=True)
+pos = nx.forceatlas2_layout(G, seed=1, scaling_ratio=2,
+                            strong_gravity=True)
 
 # Create edge trace and nodes scatter trace for plotly.
 edge_x = []
@@ -72,12 +85,8 @@ edge_y = []
 for edge in G.edges():
     x0, y0 = pos[edge[0]]
     x1, y1 = pos[edge[1]]
-    edge_x.append(x0)
-    edge_x.append(x1)
-    edge_x.append(None)
-    edge_y.append(y0)
-    edge_y.append(y1)
-    edge_y.append(None)
+    edge_x += [x0, x1, None]
+    edge_y += [y0, y1, None]
 
 edge_trace = go.Scatter(
     x=edge_x, y=edge_y,
@@ -103,11 +112,12 @@ node_trace = go.Scatter(
         size=10,
         line_width=2))
 
-
+# Add node trace attributes.
 node_trace.marker.color = node_colors
 node_trace.marker.size = node_sizes
 node_trace.hovertext = hover_labels
 
+# Create node graph with hover annotations.
 fig = go.Figure(data=[edge_trace, node_trace],
              layout=go.Layout(
                 showlegend=False,
@@ -122,7 +132,9 @@ fig = go.Figure(data=[edge_trace, node_trace],
                     x=0.005, y=-0.002 ) ],
                 xaxis=dict(showgrid=False, zeroline=False, showticklabels=False),
                 yaxis=dict(showgrid=False, zeroline=False, showticklabels=False))
+
                 )
+
 # Add permanent annotations.
 fig.add_trace(go.Scatter(x=node_x, y=node_y, 
                          mode = "text",
@@ -133,7 +145,7 @@ fig.add_trace(go.Scatter(x=node_x, y=node_y,
                          ),
                          textposition="middle center"))
 
+# Plot graph and save as html to insert in kramdown.
 fig.show()
-
-
-fig.write_html('_pages/plotly_example.html', full_html=False, include_plotlyjs='cdn')
+fig.write_html('_pages/research_plot.html', full_html=False,
+               include_plotlyjs='cdn')
