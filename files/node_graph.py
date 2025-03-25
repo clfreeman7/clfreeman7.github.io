@@ -128,6 +128,9 @@ fig.add_trace(go.Scatter(x=node_x, y=node_y,
                          mode = "text",
                          name = "Text",
                          text = node_labels,
+                         textfont=dict(
+                             color="black"
+                         ),
                          textposition="middle center"))
 
 fig.show()
