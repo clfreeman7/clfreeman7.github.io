@@ -12,14 +12,14 @@ phd_courses = ['Mechanical Vibrations', 'Advanced Linear Control', 'Engineering 
                'Digital Signal Processing', 'Intro to Robotics', 'Linear Optimization Theory',
                'MechE Analysis', 'Adv Robot Kinematics and Dynamics', 'Optimal Control and Estimation', 
                'Partial Differential Equations', 'Biomechanics of Human Movement']
+
 committee_fields = ['Dr. Sameer Mulani<br>Optimization<br>Aerospace (UA)', 
                     'Dr. Vishesh Vikas<br>Soft Robotics<br>MechE (UA)',
                     'Dr. Sree Kalyan Patiballa<br>Metamaterials<br>MechE (UA)', 
                     'Dr. Hwan-Sik Yoon<br>AI/ML<br>MechE (UA)', 
                     'Dr. W. Steve Shepard Jr.<br>Vibrations/Acoustics<br>Mech E (UA)', 
                     'Dr. Barry Trimmer<br>Biology/Neuroscience<br>Tufts University']
-committee_members = ['Sameer Mulani', 'Vishesh Vikas', 'Sree Kalyan Patiballa', 
-                     'Hwan-Sik Yoon' , 'W. Steve Shepard Jr.', 'Barry Trimmer']
+
 research_fields = ['Design Optimization', 'Modular Reconfigurable Robots', 'Reinforcement Learning',
                     'Mobile Soft Robots', 'Computer Vision', 'Visual Tracking', 'Bio-inspired Robots',
                    'Optimal Control', 'Probability and Statistics', 'Path Planning',
@@ -27,9 +27,11 @@ research_fields = ['Design Optimization', 'Modular Reconfigurable Robots', 'Rein
                    'Neural Control', 'Locomotion Simulation and Analysis', 'Inertial Sensors', 
                    'Topology', 'Lie Algebra', 'Kinematics and Dynamics', 'Data Visualization', 
                    'Reproducibility', 'Bioacoustics', 'Biological Tissue Phantoms']
+
 related_fields = ['Surgical Robots', 'Agricultural Robots', 'Search and Rescue Robots', 
                   'Central Pattern Generators', 'Materials Engineering', 'Biomechanical Modeling',
                   'Human Gait Analysis', 'Neuroscience', 'Computational Biology']
+
 category_bubbles = [phd_courses, committee_fields, research_fields, related_fields]
 category_names = ['PhD<br>Courses', 'Dissertation<br>Committee', 'Dissertation<br>Research', 'Related<br>Research']
 node_sizes = []
@@ -41,7 +43,7 @@ center_node = 'My<br>Research'
 G.add_node(center_node)
 
 node_labels.append(center_node)
-node_sizes.append(80)
+node_sizes.append(60)
 hover_labels.append(None)
 node_colors.append(0)
 
@@ -58,13 +60,11 @@ for i, bubble in enumerate(category_bubbles):
         node_labels.append(None)
         hover_labels.append(component)
         node_colors.append(i+1)
+# (Optional) Create dictionary for node sizes to pass to nx.forceatlas2_layout.      
 node_size_dict = {k:v for v,k in zip(G.nodes,node_sizes)}
-pos = nx.forceatlas2_layout(G, seed=17, scaling_ratio=15, strong_gravity=True)
-#pos = nx.forceatlas2_layout(G, seed=6, scaling_ratio=15, strong_gravity=True)
-#pos = nx.forceatlas2_layout(G, seed=6, scaling_ratio=.5, strong_gravity=True, node_size=node_size_dict)
-#pos = nx.forceatlas2_layout(G, seed=9, scaling_ratio=.5, node_size=node_size_dict)
-#print(pos)
-#print(list(G.nodes))
+
+# Use force algorithm to determine positions of nodes in graph.
+pos = nx.forceatlas2_layout(G, seed=1, scaling_ratio=2, strong_gravity=True)
 
 # Create edge trace and nodes scatter trace for plotly.
 edge_x = []
@@ -98,29 +98,11 @@ node_trace = go.Scatter(
     hoverinfo='text',
     marker=dict(
         showscale=False,
-        # colorscale options
-        #'Greys' | 'YlGnBu' | 'Greens' | 'YlOrRd' | 'Bluered' | 'RdBu' |
-        #'Reds' | 'Blues' | 'Picnic' | 'Rainbow' | 'Portland' | 'Jet' |
-        #'Hot' | 'Blackbody' | 'Earth' | 'Electric' | 'Viridis' |
         colorscale='YlGnBu',
-        #reversescale=True,
         color=[],
         size=10,
- #       colorbar=dict(
- #           thickness=15,
- #           title=dict(
- #             text='Node Connections',
- #             side='right'
- #           ),
-  #         xanchor='left',
-#        ),
         line_width=2))
 
-node_adjacencies = []
-node_text = []
-for node, adjacencies in enumerate(G.adjacency()):
-    node_adjacencies.append(len(adjacencies[1]))
-    node_text.append('# of connections: '+str(len(adjacencies[1])))
 
 node_trace.marker.color = node_colors
 node_trace.marker.size = node_sizes
@@ -128,12 +110,6 @@ node_trace.hovertext = hover_labels
 
 fig = go.Figure(data=[edge_trace, node_trace],
              layout=go.Layout(
-              #  title=dict(
-              #      text="<br>Network graph made with Python",
-              #      font=dict(
-              #          size=16
-              #      )
-              #),
                 showlegend=False,
                 hovermode='closest',
                 margin=dict(b=20,l=5,r=5,t=40),
