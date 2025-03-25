@@ -12,8 +12,12 @@ phd_courses = ['Mechanical Vibrations', 'Advanced Linear Control', 'Engineering 
                'Digital Signal Processing', 'Intro to Robotics', 'Linear Optimization Theory',
                'MechE Analysis', 'Adv Robot Kinematics and Dynamics', 'Optimal Control and Estimation', 
                'Partial Differential Equations', 'Biomechanics of Human Movement']
-committee_fields = ['Optimization (Aerospace)', 'Soft Robotics', 'Metamaterials', 
-                    'AI/ML', 'Vibrations/Acoustics', 'Biology/Neuroscience']
+committee_fields = ['Dr. Sameer Mulani<br>Optimization<br>Aerospace (UA)', 
+                    'Dr. Vishesh Vikas<br>Soft Robotics<br>MechE (UA)',
+                    'Dr. Sree Kalyan Patiballa<br>Metamaterials<br>MechE (UA)', 
+                    'Dr. Hwan-Sik Yoon<br>AI/ML<br>MechE (UA)', 
+                    'Dr. W. Steve Shepard Jr.<br>Vibrations/Acoustics<br>Mech E (UA)', 
+                    'Dr. Barry Trimmer<br>Biology/Neuroscience<br>Tufts University']
 committee_members = ['Sameer Mulani', 'Vishesh Vikas', 'Sree Kalyan Patiballa', 
                      'Hwan-Sik Yoon' , 'W. Steve Shepard Jr.', 'Barry Trimmer']
 research_fields = ['Design Optimization', 'Modular Reconfigurable Robots', 'Reinforcement Learning',
@@ -55,8 +59,9 @@ for i, bubble in enumerate(category_bubbles):
         hover_labels.append(component)
         node_colors.append(i+1)
 node_size_dict = {k:v for v,k in zip(G.nodes,node_sizes)}
-pos = nx.forceatlas2_layout(G, seed=6, scaling_ratio=15, strong_gravity=True)
-#pos = nx.forceatlas2_layout(G, seed=6, scaling_ratio=1, node_size=node_size_dict)
+pos = nx.forceatlas2_layout(G, seed=17, scaling_ratio=15, strong_gravity=True)
+#pos = nx.forceatlas2_layout(G, seed=6, scaling_ratio=15, strong_gravity=True)
+#pos = nx.forceatlas2_layout(G, seed=6, scaling_ratio=.5, strong_gravity=True, node_size=node_size_dict)
 #pos = nx.forceatlas2_layout(G, seed=9, scaling_ratio=.5, node_size=node_size_dict)
 #print(pos)
 #print(list(G.nodes))
