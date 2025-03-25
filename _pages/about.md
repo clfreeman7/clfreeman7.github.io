@@ -13,9 +13,9 @@ Hi, I'm Caitlin! I'm a roboticst currently working as a Visiting Scholar at the 
 <p align="center">
 <img src="/images/robot_translation.gif" width="400" />
 </p>
-{% include_relative plotly_example.html %}
--->
 
+-->
+{% include_relative plotly_example.html %}
 
 My Research
 ======
