@@ -1,0 +1,14 @@
+---
+title: "Topology Design and Optimization of Modular Soft Robots Capable of Homogenous and Heterogenous Reconfiguration"
+collection: publications
+category: manuscripts
+permalink: /publication/2023-04-28-heterogeneous
+excerpt: 'Abstract: The deformability of soft material robots provides them with the ability to transform between complex shapes and forms. This unique ability facilitates...'
+date: 2023-04-28
+venue: 'ASME Journal of Computational and Nonlinear Dynamics'
+slidesurl: 'http://academicpages.github.io/files/slides3.pdf'
+paperurl: 'http://academicpages.github.io/files/paper3.pdf'
+citation: 'C. Freeman, J. Conzola, and V. Vikas, “Topology Design and Optimization of Modular Soft Robots Capable of Homogenous and Heterogenous Reconfiguration,” <i>Journal of Computational and Nonlinear Dynamics</i>, vol. 18, no. 6, Apr. 2023, doi: 10.1115/1.4062265.'
+---
+
+Abstract: The deformability of soft material robots provides them with the ability to transform between complex shapes and forms. This unique ability facilitates Modular Soft Robots (MSoRos) to assemble and reconfigure into different configurations, e.g., planar and spherical. These topologies display widely different locomotion modes that are desirable to navigate different environments, e.g., crawling or rolling for these cases. This research presents topology design and optimization methodology of MSoRos capable of both homogeneous and heterogeneous reconfiguration in spherical and planar configurations. Homogeneous reconfiguration refers to the scenario when all the modules are identical, while the heterogeneous contains nonidentical modules. The sequential design approach uses a polyhedron (Archimedean or Platonic) as the base solid to define module characteristics. As the design processes involve nonlinear projections, the base polyhedron also dictates the type of reconfiguration—heterogeneous (Archimedean) or homogeneous (Platonic). Thereafter, it applies the polyhedron vertex alignment principle to ensure geometric alignment of the modules during reconfiguration. Planar and spherical distortion metrics are defined to quantify distortions due to reconfiguration. Subsequently, the optimal topology is obtained by minimizing a cost function that is a weighted sum of the two distortion metrics. The result is a set of MSoRos capable of distinct 1D and 2D planar configurations (both heterogeneous and homogeneous) and multiple 3D spherical configurations of varying radii (both heterogeneous and homogeneous). The methodology is validated on a MSoRo system based on the combination of a cuboctahedron (Archimedean solid) and a cube and an octahedron (Platonic solids).

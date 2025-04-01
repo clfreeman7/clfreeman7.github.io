@@ -2,9 +2,9 @@
 title: "Topology and morphology design of spherically reconfigurable homogeneous Modular Soft Robots (MSoRos)"
 collection: publications
 category: manuscripts
-permalink: /publication/2023-2-14-topology-and-morphology
-excerpt: 'Abstract: Imagine a swarm of terrestrial robots that can explore an environment, and, on completion of this task, reconfigure into a...'
-date: 2023-2-14
+permalink: /publication/2023-02-14-topology-and-morphology
+excerpt: 'Abstract: Imagine a swarm of terrestrial robots that can explore an environment, and, on completion of this task, reconfigure into a spherical ball and roll out. This dimensional...'
+date: 2023-02-14
 venue: 'Soft Robotics'
 #videourl: 'http://academicpages.github.io/files/slides1.pdf'
 paperurl: 'https://arxiv.org/pdf/2205.00544'

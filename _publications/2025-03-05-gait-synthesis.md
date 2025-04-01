@@ -1,0 +1,14 @@
+---
+title: "Environment-Centric Learning Approach for Gait Synthesis in Terrestrial Soft Robots"
+collection: publications
+category: manuscripts
+permalink: /publication/2025-03-05-gait-synthesis
+excerpt: 'Abstract: Locomotion gaits are fundamental for control of soft terrestrial robots. However, synthesis of these gaits is challenging due to modeling of robot-environment...'
+date: 2025-03-05
+venue: 'IEEE Transactions on Robotics'
+#slidesurl: 'http://academicpages.github.io/files/slides2.pdf'
+paperurl: 'https://arxiv.org/pdf/2402.03617'
+citation: '<a href="https://ieeexplore.ieee.org/document/10912790">C. Freeman, A. N. Mahendran, and V. Vikas, “Environment-Centric Learning Approach for Gait Synthesis in Terrestrial Soft Robots,” in <i>IEEE Transactions on Robotics</i>, vol. 41, pp. 2144-2163, 2025, doi: 10.1109/TRO.2025.3548543.</>'
+---
+
+Abstract: Locomotion gaits are fundamental for control of soft terrestrial robots. However, synthesis of these gaits is challenging due to modeling of robot-environment interaction and lack of a mathematical framework. This work presents an environment-centric, data-driven, and fault-tolerant probabilistic model-free control framework that allows for soft multilimb robots to learn from their environment and synthesize diverse sets of locomotion gaits for realizing open-loop control. Here, discretization of factors dominating robot-environment interactions enables an environment-specific graphical representation where the edges encode experimental locomotion data corresponding to the robot motion primitives. In this graph, locomotion gaits are defined as simple cycles that are transformation invariant, i.e., the locomotion is independent of the starting vertex of these periodic cycles. Gait synthesis, the problem of finding optimal locomotion gaits for a given substrate, is formulated as binary integer linear programming problems with a linearized cost function, linear constraints, and iterative simple cycle detection. Experimentally, gaits are synthesized for varying robot-environment interactions. Variables include robot morphology—three-limb and four-limb robots, TerreSoRo-III and TerreSoRo-IV; substrate—rubber mat, whiteboard and carpet; and actuator functionality—simulated loss of robot limb actuation. On an average, gait synthesis improves the translation and rotation speeds by 82% and 97%, respectively. The results highlight that data-driven methods are vital to soft robot locomotion control due to complex robot-environment interactions and simulation-to-reality gaps, particularly when biological analogues are unavailable.
