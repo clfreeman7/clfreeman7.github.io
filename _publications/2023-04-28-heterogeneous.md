@@ -6,8 +6,8 @@ permalink: /publication/2023-04-28-heterogeneous
 excerpt: 'Abstract: The deformability of soft material robots provides them with the ability to transform between complex shapes and forms. This unique ability facilitates...'
 date: 2023-04-28
 venue: 'ASME Journal of Computational and Nonlinear Dynamics'
-slidesurl: 'http://academicpages.github.io/files/slides3.pdf'
-paperurl: 'http://academicpages.github.io/files/paper3.pdf'
+#slidesurl: 'http://academicpages.github.io/files/slides3.pdf'
+#paperurl: 'http://academicpages.github.io/files/paper3.pdf'
 citation: 'C. Freeman, J. Conzola, and V. Vikas, “Topology Design and Optimization of Modular Soft Robots Capable of Homogenous and Heterogenous Reconfiguration,” <i>Journal of Computational and Nonlinear Dynamics</i>, vol. 18, no. 6, Apr. 2023, doi: 10.1115/1.4062265.'
 ---
 
