@@ -20,8 +20,8 @@ main:
   - title: "CV"
     url: /cv/
 
-  - title: "Resources for Graduate Students"
-    url: /year-archive/
+#  - title: "Resources for Graduate Students"
+#    url: /year-archive/
     
     
   #- title: "Guide"

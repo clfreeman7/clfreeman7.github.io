@@ -3,11 +3,11 @@ title: "Topology and morphology design of spherically reconfigurable homogeneous
 collection: publications
 category: manuscripts
 permalink: /publication/2023-2-14-topology-and-morphology
-#excerpt: 'This paper is about the number 1. The number 2 is left for future work.'
+excerpt: 'Abstract: Imagine a swarm of terrestrial robots that can explore an environment, and, on completion of this task, reconfigure into a...'
 date: 2023-2-14
 venue: 'Soft Robotics'
 #videourl: 'http://academicpages.github.io/files/slides1.pdf'
-paperurl: 'http://academicpages.github.io/files/paper1.pdf'
+paperurl: 'https://arxiv.org/pdf/2205.00544'
 citation: 'Freeman, Caitlin, Michael Maynard, and Vishesh Vikas. “Topology and Morphology Design of Spherically Reconfigurable Homogeneous Modular Soft Robots.” <i>Soft Robotics</i>, vol. 10, no. 1, pp. 52–65, 2023, doi: 10.1089/soro.2021.0125.'
 ---
 
