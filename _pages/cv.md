@@ -33,12 +33,12 @@ Experience
 
 Skills
 ======
-* Relevant Expertise: statistical analysis, machine learning, computer vision (e.g., visual tracking,
+* **Relevant Expertise**: statistical analysis, machine learning, computer vision (e.g., visual tracking,
 image segmentation, pose estimation), data visualization, modeling / simulation
-* Programming Languages: MATLAB, Python, C++ (Arduino)
-* Hardware: microcontrollers, inertial sensors, 3D printing, PCB prototyping, soldering, CNC machining
-* Software: Git, LaTeX, CAD / FEA (Fusion 360, SolidWorks, Inventor), Arduino, Cura
-* Languages: English (native), Spanish (proficient, C1)
+* **Programming Languages**: MATLAB, Python, C++ (Arduino)
+* **Hardware**: microcontrollers, inertial sensors, 3D printing, PCB prototyping, soldering, CNC machining
+* **Software**: Git, LaTeX, CAD / FEA (Fusion 360, SolidWorks, Inventor), Arduino, Cura
+* **Languages**: English (native), Spanish (proficient, C1)
 
 Publications
 ======
