@@ -9,11 +9,13 @@ redirect_from:
 
 {% include base_path %}
 
+Below is an abridged version of my CV. You can <a href="mailto:caitlinfreeman7@gmail.com">email me</a> to recieve the full version. 
+
 Education
 ======
-* Ph.D., M.S. in Mechanical Engineering, 2024
+* Ph.D., M.S. in Mechanical Engineering, University of Alabama, 2024
 
-* B.S. in GitHub, GitHub University, 2012
+* B.S. in Mechanical Engineering, University of Alabama, 2019
 
 Work experience
 ======
@@ -49,15 +51,8 @@ Publications
   
 Talks
 ======
-  <ul>{% for post in site.talks reversed %}
-    {% include archive-single-talk-cv.html  %}
-  {% endfor %}</ul>
-  
-Teaching
-======
-  <ul>{% for post in site.teaching reversed %}
-    {% include archive-single-cv.html %}
-  {% endfor %}</ul>
+
+
   
 Service and leadership
 ======
