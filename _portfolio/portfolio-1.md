@@ -1,7 +1,7 @@
 ---
-title: "Portfolio item number 1"
-excerpt: "Short description of portfolio item number 1<br/><img src='/images/500x300.png'>"
+title: "Data-Driven Gait Synthesis"
+excerpt: "How do we know what control inputs to use to get a robot to successfully move around in a given environment? For traditional rigid robots, we use established kinematics and dynamics equations to apply model-based control. But this isn't so simple for soft robots, whose sensivity to manufacturing innacuries and environmental forces alongisde complicated dynamics hinder the feasibility and accuracy of traditional approaches. Instead, we can use a reinforcement learning-based approach, where we collect data on repeated robot motions which are then fed into an optimization algorithm. The result is optimal translation and rotation gaits that are found without using an explicit model of the robot. We can even use these gaits to achieve real-time path planning with obstacle avoidance.  1<br/><img src='/images/robot_translation.gif'>"
 collection: portfolio
 ---
 
-This is an item in your portfolio. It can be have images or nice text. If you name the file .md, it will be parsed as markdown. If you name the file .html, it will be parsed as HTML. 
+How do we know what control inputs to use to get a robot to successfully move around in a given environment? For traditional rigid robots, we use established kinematics and dynamics equations to apply model-based control. But this isn't so simple for soft robots, whose sensivity to manufacturing innacuries and environmental forces alongisde complicated dynamics hinder the feasibility and accuracy of traditional approaches. Instead, we can use a reinforcement learning-based approach, where we collect data on repeated robot motions which are then fed into an optimization algorithm. The result is optimal translation and rotation gaits that are found without using an explicit model of the robot. We can even use these gaits to achieve real-time path planning with obstacle avoidance. 
