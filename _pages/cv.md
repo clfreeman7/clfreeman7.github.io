@@ -17,23 +17,20 @@ Education
 
 * B.S. in Mechanical Engineering, University of Alabama, 2019
 
-Work experience
+Experience
 ======
-* Spring 2024: Academic Pages Collaborator
-  * GitHub University
-  * Duties includes: Updates and improvements to template
-  * Supervisor: The Users
+* Visiting Scholar (August 2024 -- Present)
+  * Agile Robotics Lab, University of Alabama
 
-* Fall 2015: Research Assistant
-  * GitHub University
-  * Duties included: Merging pull requests
-  * Supervisor: Professor Hub
+* Graduate Research Assistant (January 2019 -- August 2024)
+  * Agile Robotics Lab, University of Alabama
 
-* Summer 2015: Research Assistant
-  * GitHub University
-  * Duties included: Tagging issues
-  * Supervisor: Professor Git
-  
+* Undergraduate Research Assistant (June 2018 -- May 2019)
+  * Structural Acoustics Lab, University of Alabama
+
+* Computer-Aided Design (CAD) Team Lead (February 2017 -- March 2018)
+  * Assistagrow, a Remote Startup
+
 Skills
 ======
 * Skill 1
@@ -54,6 +51,3 @@ Talks
 
 
   
-Service and leadership
-======
-* Currently signed in to 43 different slack teams
