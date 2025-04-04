@@ -1,5 +1,5 @@
 # Caitlin Freeman's Professional Website: 
-**This webiste is built using Academic Pages, a GitHub Pages template for personal and professional portfolio-oriented websites.**
+**This website is built using Academic Pages, a GitHub Pages template for personal and professional portfolio-oriented websites.**
 
 ---
 <div align="center">
