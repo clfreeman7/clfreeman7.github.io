@@ -7,7 +7,7 @@ redirect_from:
   - /about.html
 ---
 
-Hi, I'm Caitlin! I'm a roboticst currently working as a Visiting Scholar at the [University of Alabama](https://sites.ua.edu/arl/). My work is focused on the design, fabrication, and control of modular reconfigurable soft robots. 
+Hi, I'm Caitlin! I'm a roboticst by training currently working as a Postdoctoral Research Associate at [St. Jude Children's Research Hospital](https://www.stjude.org/research/departments/imaging-sciences.html). My dissertation work was focused on the design, fabrication, and control of modular reconfigurable soft robots.
 
 <!---
 <p align="center">
